@@ -4,6 +4,9 @@
 
 package com.orlando.facturas;
 
+import com.orlando.facturas.ui.frames.MainFrame;
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author Orlando
@@ -11,6 +14,9 @@ package com.orlando.facturas;
 public class Facturas {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SwingUtilities.invokeLater(() -> {
+            MainFrame mainFrame = new MainFrame();
+            mainFrame.setVisible(true);
+        });
     }
 }
